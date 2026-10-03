@@ -1,0 +1,10 @@
+# GitHub Linguist: the course notebook (~400 KB, mostly cell outputs) would
+# otherwise outweigh the Python source (~160 KB) and make the repo show up as
+# "Jupyter Notebook". Exclude notebooks from the language stats; the project's
+# real code is the Python package at the root.
+*.ipynb linguist-documentation
+notebook/** linguist-documentation
+
+# Lockfiles are generated, not authored.
+uv.lock linguist-generated
+frontend/package-lock.json linguist-generated
